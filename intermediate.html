@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Intermediate</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+	
+		<h1 style="color:black;font-family:verdana;text-align:center;background-color:#f1f1f1;width:250px;">Intermediate</h1>
+			<p style="font-family:verdana;background-color: #f1f1f1;width:300px;">
+				Select your proficiency level of yoga:</p>
+		<body background="Yoga.jpg">
+		
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'Beginner')"><a href="beginner.html">Beginner</a></button>
+			<button class="tablinks" onclick="openCity(event, 'Intermediate')"><a href="intermediate.html">Intermediate</a></button>
+			<button class="tablinks" onclick="openCity(event, 'Advanced')"><a href="advanced.html">Advanced</a></button>
+		</div>
+	
+	
+	
+
+	<div id="tabcontent">
+	<div id="intermediate">
+	
+	
+		<button class="accordion">Big Toe</button>
+		<div class="panel">
+			<img src="toe.jpg">
+			<p>How to do it: bend over as far as you can and touch your toes for 30 seconds.</p>
+		</div>
+
+		
+		<button class="accordion">Boat</button>
+		<div class="panel">
+			<img src="boat.jpg">
+			<p>How to do it: lay flat on the floor then make a ninty degree bend with your waist and reach your arms to your legs. hold for 30 seconds.</p>
+		</div>
+		
+		<button class="accordion">Bow</button>
+		<div class="panel">
+			<img src="bow.jpg">
+			<p>How to do it: lay flat on your stomach then reach bacck and grab your ankles. Hold for 30 seconds.</p>
+		</div>
+		
+		<button class="accordion">Camel</button>
+			<div class="panel">
+				<img src="camel.jpg">
+				<p>How to do it: while kneeling, reach back and grab your ankles. Hold for 30 seconds.</p>
+			</div>
+		
+		<button class="accordion">Dolphin Plank</button>
+		<div class="panel">
+			<img src="dolphinPlank.jpg">
+			<p> How to do it: While on your stomach, prop yourself up on your elbows and hold for 30 seconds.</p>
+		</div>
+		
+		<button class="accordion">Eagle</button>
+		<div class="panel">
+			<img src="eagle.jpg">
+		<p>How to do it: balance on one leg then wrap your other leg around it. Extend one arm up then wrap the other arm around it similar to the way you did with your legs. Hold.</p>
+		</div>
+		
+		<button class="accordion">Hand to Toe</button>
+		<div class="panel">
+			<img src="handToe.jpg">
+			<p>How to do it: balance on one leg then extend the other horizontally. Reach out and grab that leg with your arm. Hold.</p>
+		</div>
+		
+		<button class="accordion">Peacock</button>
+		<div class="panel">
+			<img src="peacock.jpg">
+		<p>How to do it: begin in dolphin pose and slowly shift your weight onto your elbows. Hold.</p>
+		</div>
+		
+		<button class="accordion">Staff</button>
+		<div class="panel">
+			<img src="staff.jpg">
+		<p>How to do it: begin as you would with the dolphin pose except this time balance on your hands instead of your elbows. Hold.</p>
+		</div>
+		
+		<button class="accordion">Half Moon</button>
+		<div class="panel">
+			<img src="halfMoon.jpg">
+		<p>How to do it: balance on one leg and slowly reach your arm to the ground. Hold.</p>
+		</div>
+
+		</div>
+	</div>
+	
+	
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+		
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script> 
+	
+	
+	</body>
+</html>

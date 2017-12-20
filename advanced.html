@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Advanced</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+	
+		<h1 style="color:black;font-family:verdana;text-align:center;background-color:#f1f1f1;width:250px;">Advanced</h1>
+			<p style="font-family:verdana;background-color: #f1f1f1;width:300px;">
+				Select your proficiency level of yoga:</p>
+		<body background="Yoga.jpg">
+		
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'Beginner')"><a href="beginner.html">Beginner</a></button>
+			<button class="tablinks" onclick="openCity(event, 'Intermediate')"><a href="intermediate.html">Intermediate</a></button>
+			<button class="tablinks" onclick="openCity(event, 'Advanced')"><a href="advanced.html">Advanced</a></button>
+		</div>
+	
+	
+	
+
+	<div id="tabcontent">
+	<div id="advanced">
+	
+	
+		<button class="accordion">Firefly</button>
+		<div class="panel">
+			<img src="firefly.jpg">
+			<p>How to do it: balance on your hands and extend your legs up. </p>
+		</div>
+
+		
+		<button class="accordion">Pigeon</button>
+		<div class="panel">
+			<img src="pigeon.jpg">
+			<p>How to do it: begin with a back-bend and then collapse onto your knees and elbows.</p>
+		</div>
+		
+		<button class="accordion">Lord of the Dance</button>
+		<div class="panel">
+			<img src="lord.jpg">
+			<p>How to do it:balance on one leg and exented the other behind you while grabbing your ankle.</p>
+		</div>
+		
+		<button class="accordion">Peacock Two</button>
+			<div class="panel">
+				<img src="peacock2.jpg">
+				<p>How to do it: begin with the staff pose then slowly transfer your weight onto your hands.</p>
+			</div>
+		
+		<button class="accordion">Leg Lift</button>
+		<div class="panel">
+			<img src="dolphinPlank.jpg">
+			<p> How to do it: while on your side, raise one leg into the air and grab it with your hand.</p>
+		</div>
+		
+		<button class="accordion">Shoulder Press</button>
+		<div class="panel">
+			<img src="shoulderPress.jpg">
+		<p>How to do it: begin with the firefly pose then slowly wrap your legs around your arms and apply pressure.</p>
+		</div>
+		
+		<button class="accordion">Lotus</button>
+		<div class="panel">
+			<img src="lotus.jpg">
+			<p>How to do it: sit with your legs crossed so that each foot lies on each thigh.</p>
+		</div>
+
+
+		</div>
+	</div>
+	
+	
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+		
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script> 
+	
+	
+	</body>
+</html>

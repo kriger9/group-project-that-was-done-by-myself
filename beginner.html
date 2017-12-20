@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Beginner</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+	</head>
+	<body>
+	
+		<h1 style="color:black;font-family:verdana;text-align:center;background-color:#f1f1f1;width:175px;">Beginner</h1>
+			<p style="font-family:verdana;background-color: #f1f1f1;width:300px;">
+				Select your proficiency level of yoga:</p>
+		<body background="Yoga.jpg">
+		
+		<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'Beginner')"><a href="beginner.html">Beginner</a></button>
+			<button class="tablinks" onclick="openCity(event, 'Intermediate')"><a href="intermediate.html">Intermediate</a></button>
+			<button class="tablinks" onclick="openCity(event, 'Advanced')"><a href="advanced.html">Advanced</a></button>
+		</div>
+	
+	
+	
+
+	<div id="tabcontent">
+	<div id="Beginner">
+	
+	
+		<button class="accordion">Mountain</button>
+		<div class="panel">
+			<img src="Mountain.jpg">
+			<p>How to do it: Stand with feet together. Ground down evenly through feet and lift up through the crown of your head. Lift your thighs. Lengthen up through all four sides of your waist, elongating spine. Breathe easy.</p>
+		</div>
+
+		
+		<button class="accordion">Chair</button>
+		<div class="panel">
+			<img src="Chair.jpg">
+			<p>How to do it: Start in mountain pose. Raise arms and reach up through fingers. Sit back and down as if sitting into a chair. Shift weight toward heels, and lengthen up through torso. </p>
+		</div>
+		
+		<button class="accordion">Puppy Dog on Chair</button>
+		<div class="panel">
+			<img src="Puppy.jpg">
+			<p>How to do it: Place hands on the back of a chair with palms shoulder-distance apart. Step feet back until they align under hips, creating a right angle with your body, spine parallel with the floor. Ground through feet and lift through thighs. Reach hips away from hands to lengthen the sides of your torso. Firm your outer arms in and lengthen through the crown of your head.</p>
+		</div>
+		
+		<button class="accordion">Downward Facing Dog</button>
+			<div class="panel">
+				<img src="DownDog.jpg">
+				<p>From all fours, walk hands one palm's length in front of you. Tuck toes and lift hips up and back to lengthen your spine. (If you're inflexible, keep your knees bent in order to bring your weight back into the legs.) Press into your hands, firm your outer arms, and reach your upper thighs back toward the wall behind you.</p>
+			</div>
+		
+		<button class="accordion">Warrior</button>
+		<div class="panel">
+			<img src="Warrior.jpg">
+			<p> How to do it: Stand with feet wide, about 3 1/2 to 4 feet apart. Turn left foot in slightly, and turn right foot out 90 degrees to the side. Line up front heel with the arch of your back foot. Bend front knee to 90-degree angle, tracking the knee with the second toe to protect the knee joint. Stretch through your straight back leg and ground down into back foot. Reach arms out to shoulder height, shoulder blades down and palms wide, and gaze over the front fingers.</p>
+		</div>
+		
+		<button class="accordion">Triangle</button>
+		<div class="panel">
+			<img src="Triangle.jpg">
+		<p>How to do it: Stand with feet wide apart. Turn left toes in slightly and rotate right thigh open until right toes point directly to the side. Keeping both legs straight, ground through your feet and pull your thighs up. Spread arms wide at shoulder height, roll your front thigh open and hinge at the front hip. Lengthen your spine toward the front foot and release bottom palm to the front ankle, a yoga block (placed outside the front ankle), or the seat of a chair.</p>
+		</div>
+		
+		<button class="accordion">Tree</button>
+		<div class="panel">
+			<img src="Tree.jpg">
+			<p>How to do it: Start in mountain pose. Bend one knee, using hand to bring foot into upper inner thigh. (If this feels difficult, bring the foot to the shin below the knee, or use the wall for balance.) Press into your standing foot, and lengthen up through the crown of your head.</p>
+		</div>
+		
+		<button class="accordion">Bridge</button>
+		<div class="panel">
+			<img src="Bridge.jpg">
+		<p>How to do it: Lie faceup with knees bent, feet flat on the floor, and arms at sides. Keep feet parallel and hip-width apart, heels stacked under knees. Roll upper arms open to expand chest. Ground through outer upper arms, root down into heels, and reach knees forward to lift the hips off the floor. Shimmy your shoulders under your chest and interlace your fingers. (Hold onto the sides of your yoga mat to create more space if your shoulders are tight.)</p>
+		</div>
+		
+		<button class="accordion">Angle</button>
+		<div class="panel">
+			<img src="Angle.jpg">
+		<p>How to do it: Sitting on the floor, bend knees and open them wide like a book. Join the soles of your feet together while sitting upright. Place fingertips on the floor directly behind you and lengthen up through the entire spine. You can also hold onto ankles and hinge forward at hips. (Sit up on blankets if inner thighs are tight.)</p>
+		</div>
+		
+		<button class="accordion">Corpse</button>
+		<div class="panel">
+			<img src="Corpse.jpg">
+		<p>How to do it: Lie faceup, separating legs and letting feet splay apart. Place arms along sides, palms facing up. Close eyes and relax.</p>
+		</div>
+
+		</div>
+	</div>
+	
+	
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+		
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script> 
+	
+	
+	</body>
+</html>

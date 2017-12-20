@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	</head>
+	<body>
+
+		<h1 style="color:black;font-family:verdana;text-align:center;background-color:#f1f1f1;width:175px;">Yoga</h1>
+			<p style="font-family:verdana;background-color: #f1f1f1;width:300px;">
+				Select your proficiency level of yoga:</p>
+		<body background="Yoga.jpg">
+	</body>
+	
+	<div class="tab">
+			<button class="tablinks" onclick="openCity(event, 'Beginner')"><a href="beginner.html">Beginner</a></button>
+			<button class="tablinks" onclick="openCity(event, 'Intermediate')"><a href="intermediate.html">Intermediate</a></button>
+			<button class="tablinks" onclick="openCity(event, 'Advanced')"><a href="advanced.html">Advanced</a></button>
+	</div>
+	
+	<script>
+		function openCity(evt, cityName) 
+		{
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) 
+			{
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) 
+			{
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+</script> 
+
+</body>
+</html>
